@@ -1,0 +1,150 @@
+/* Styling the Body element i.e. Color, 
+        Font, Alignment */
+body {
+    /*background-color: #1048c2;*/
+    font-family: Verdana, serif;
+    text-align: center;
+    background: rgb(0, 255, 201);
+    background: linear-gradient(
+            90deg,
+            rgba(0, 255, 201, 1) 0%,
+            rgba(119, 72, 166, 1) 50%,
+            rgba(255, 83, 83, 1) 100%
+    );
+}
+
+/* Styling the Form (Color, Padding, Shadow) */
+form {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.25);
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.6);
+    border-radius: 7px;
+}
+
+/* Styling form-control Class */
+.form-control {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+/* Styling form-control Label */
+.form-control label {
+    color: #ffffff;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Styling form-control input,
+        select, textarea */
+.form-control input,
+.form-control select,
+.form-control textarea {
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+    font-family: inherit;
+    padding: 10px;
+    display: block;
+    width: 95%;
+}
+
+/* Styling form-control Radio
+        button and Checkbox */
+.form-control input[type="radio"],
+.form-control input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+}
+
+/* Styling Button */
+.formbtn,
+.Login {
+    background-color: rgba(0, 0, 0, 0.3); /*#1048c2*/
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 21px;
+    display: block;
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.formbtn:hover,
+.Login:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    animation-name: formbtnhover;
+    animation-duration: .3s;
+}
+
+h1 {
+    color: #ffffff;
+}
+
+.admbtn {
+    border-radius: 7px;
+    font-family: inherit;
+    font-size: 17px;
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    border-radius: 7px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    animation-name: navhover;
+    animation-duration: .3s;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+}
+
+.topnav a.active:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #ffffff;
+    animation-name: navhoveractive;
+    animation-duration: .3s;
+}
+
+@keyframes navhover {
+    from {background-color: rgba(0, 0, 0, 0.3);}
+    to {background-color: rgba(0, 0, 0, 0.6);}
+}
+
+@keyframes navhoveractive {
+    from {background-color: rgba(0, 0, 0, 0.5);}
+    to {background-color: rgba(0, 0, 0, 0.6);}
+}
+
+@keyframes formbtnhover {
+    from {background-color: rgba(0, 0, 0, 0.4);}
+    to {background-color: rgba(0, 0, 0, 0.5);}
+}
